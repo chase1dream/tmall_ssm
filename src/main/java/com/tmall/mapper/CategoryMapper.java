@@ -2,7 +2,6 @@ package com.tmall.mapper;
 
 import com.tmall.pojo.Category;
 import com.tmall.pojo.CategoryExample;
-
 import java.util.List;
 
 public interface CategoryMapper {

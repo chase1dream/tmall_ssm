@@ -2,7 +2,6 @@ package com.tmall.mapper;
 
 import com.tmall.pojo.OrderItem;
 import com.tmall.pojo.OrderItemExample;
-
 import java.util.List;
 
 public interface OrderItemMapper {

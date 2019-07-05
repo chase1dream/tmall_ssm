@@ -2,7 +2,6 @@ package com.tmall.mapper;
 
 import com.tmall.pojo.ProductImage;
 import com.tmall.pojo.ProductImageExample;
-
 import java.util.List;
 
 public interface ProductImageMapper {

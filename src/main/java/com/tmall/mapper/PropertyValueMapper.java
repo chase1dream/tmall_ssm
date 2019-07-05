@@ -2,7 +2,6 @@ package com.tmall.mapper;
 
 import com.tmall.pojo.PropertyValue;
 import com.tmall.pojo.PropertyValueExample;
-
 import java.util.List;
 
 public interface PropertyValueMapper {

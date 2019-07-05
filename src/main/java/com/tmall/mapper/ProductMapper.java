@@ -2,7 +2,6 @@ package com.tmall.mapper;
 
 import com.tmall.pojo.Product;
 import com.tmall.pojo.ProductExample;
-
 import java.util.List;
 
 public interface ProductMapper {

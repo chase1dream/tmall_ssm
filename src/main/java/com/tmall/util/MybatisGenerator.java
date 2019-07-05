@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class MybatisGenerator {
     public static void main(String[] args) {
-        String today = "2019-07-04";
+        String today = "2019-07-05";
         Date d = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         try {

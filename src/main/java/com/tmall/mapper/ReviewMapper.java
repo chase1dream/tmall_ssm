@@ -2,7 +2,6 @@ package com.tmall.mapper;
 
 import com.tmall.pojo.Review;
 import com.tmall.pojo.ReviewExample;
-
 import java.util.List;
 
 public interface ReviewMapper {

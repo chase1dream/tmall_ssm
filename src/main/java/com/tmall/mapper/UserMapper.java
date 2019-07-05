@@ -2,7 +2,6 @@ package com.tmall.mapper;
 
 import com.tmall.pojo.User;
 import com.tmall.pojo.UserExample;
-
 import java.util.List;
 
 public interface UserMapper {
