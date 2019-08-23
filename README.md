@@ -45,8 +45,18 @@
     4 产品属性设置    
     5 产品图片管理    
     6 用户管理    
-    7 订单管理 
-   
+    7 订单管理
+     
+   #### 部分功能预览 
+   前台首页
+      ![首页](src/main/resources/document/image/2.png)
+      
+   注册页面
+      ![注册页](src/main/resources/document/image/3.png)
+      
+   后台管理页面
+      ![后台管理页](src/main/resources/document/image/4.png)
+
    #### 涉及的技术  
     JavaSE: 
         Java基础和Java中级的大部分内容
