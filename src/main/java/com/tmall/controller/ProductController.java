@@ -5,7 +5,6 @@ import com.github.pagehelper.PageInfo;
 import com.tmall.pojo.Category;
 import com.tmall.pojo.Page;
 import com.tmall.pojo.Product;
-import com.tmall.pojo.Property;
 import com.tmall.service.CategoryService;
 import com.tmall.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -64,7 +63,7 @@ public class ProductController {
         Category c = categoryService.get(cid);
 
         PageHelper.offsetPage(page.getStart(), page.getCount());
-        List<Property> ps = productService.list(cid);
+        List<Product> ps = productService.list(cid);
 
         int total = (int) new PageInfo<>(ps).getTotal();
         page.setTotal(total);

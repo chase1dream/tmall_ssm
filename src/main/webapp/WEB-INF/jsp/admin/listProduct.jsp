@@ -1,9 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
-
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@include file="../include/admin/adminHeader.jsp" %>
-<%@include file="../include/admin/adminNavigator.jsp" %>
+<%@ include file="../include/admin/adminHeader.jsp" %>
+<%@ include file="../include/admin/adminNavigator.jsp" %>
 
 <script>
     $(function () {
@@ -56,11 +54,9 @@
                 <tr>
                     <td>${p.id}</td>
                     <td>
-
-                            <%--<c:if test="${!empty p.firstProductImage}">--%>
-                            <%--<img width="40px" src="img/productSingle/${p.firstProductImage.id}.jpg">--%>
-                            <%--</c:if>--%>
-
+                        <c:if test="${!empty p.firstProductImage}">
+                            <img width="40px" src="img/productSingle/${p.firstProductImage.id}.jpg">
+                        </c:if>
                     </td>
                     <td>${p.name}</td>
                     <td>${p.subTitle}</td>
@@ -76,8 +72,7 @@
                             class="glyphicon glyphicon-edit"></span></a></td>
                     <td><a deleteLink="true"
                            href="admin_product_delete?id=${p.id}"><span
-                            class="     glyphicon glyphicon-trash"></span></a></td>
-
+                            class="glyphicon glyphicon-trash"></span></a></td>
                 </tr>
             </c:forEach>
             </tbody>

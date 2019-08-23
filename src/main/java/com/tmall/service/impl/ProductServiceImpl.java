@@ -4,7 +4,9 @@ import com.tmall.mapper.ProductMapper;
 import com.tmall.pojo.Category;
 import com.tmall.pojo.Product;
 import com.tmall.pojo.ProductExample;
+import com.tmall.pojo.ProductImage;
 import com.tmall.service.CategoryService;
+import com.tmall.service.ProductImageService;
 import com.tmall.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,6 +25,8 @@ public class ProductServiceImpl implements ProductService {
     ProductMapper productMapper;
     @Autowired
     CategoryService categoryService;
+    @Autowired
+    ProductImageService productImageService;
 
     @Override
     public void add(Product product) {
@@ -55,6 +59,21 @@ public class ProductServiceImpl implements ProductService {
         setCategory(list);
         return list;
     }
+
+    // 增加方法 setFirstProductImage(Product p)：
+    // 根据pid和图片类型查询出所有的单个图片，然后把第一个取出来放在firstProductImage上
+    @Override
+    public void setFirstProductImage(Product product) {
+        // 拿到所有图片集合
+        List<ProductImage> imageList = productImageService.list(product.getId(), ProductImageService.type_single);
+        // 对集合进行非空判断，获取到第一张图片，并设置到product对象中
+        if (!imageList.isEmpty()) {
+            ProductImage productImage = imageList.get(0);
+            product.setFirstProductImage(productImage);
+        }
+    }
+
+
 
     public void setCategory(List<Product> ps) {
         for (Product p : ps)

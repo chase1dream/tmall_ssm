@@ -78,7 +78,7 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="name != null">
+      <if test="naem != null">
         #{name,jdbcType=VARCHAR},
       </if>
       <if test="password != null">
